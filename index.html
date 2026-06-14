@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search city...">
+            <button><i class="fas fa-search"></i></button> <!-- Proper icon tag -->
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Weather in Delhi</h2>
+           <div class="temp">51°C</div>
+           <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+           <div class="description">Sunny</div>
+           <div class="humidity">Humidity: 20%</div>
+           <div class="wind">Wind speed: 6.2 km/h</div>
+        </div>
+    </div>
+</body>
+</html>

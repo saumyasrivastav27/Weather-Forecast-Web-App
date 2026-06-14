@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+    background-image: url('https://images.unsplash.com/photo-1516166328576-82e16a127024?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.open-sans-custom {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+.card-container {
+  background:  #00000080;
+  color: white;
+  padding: 1.2em;
+  border-radius: 30px;
+  width: 50%;
+  max-width: 350px;
+  margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em; /* Reduced margin-bottom from 1.5em to 1em */
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.7em 1em; /* Slightly reduced vertical padding */
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 1em; /* Slightly reduced font size from 1.1em to 1em */
+    width: calc(100% - 60px); /* Adjusted width to account for smaller button/margin */
+    margin-right: 8px; /* Slightly reduced margin-right */
+}
+
+.search button {
+    margin: 0.3em; /* Adjusted margin */
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 40px; /* Reduced button height from 46px to 40px */
+    width: 40px; /* Reduced button width from 46px to 40px */
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevents button from shrinking */
+}
+
+.search button:hover {
+    background: #7c7c7c6b;
+}
+
+.search button img {
+    width: 18px; /* Slightly reduced icon size from 20px to 18px */
+    height: 18px;
+}
+
+/* Weather Info Styling */
+.weather h2.city {
+    margin: 0;
+    margin-bottom: 0.4em; /* Slightly reduced margin */
+    font-size: 1.6em; /* Slightly reduced font size from 1.8em to 1.6em */
+}
+
+.weather .temp {
+    margin: 8px 0; /* Slightly reduced margin */
+    font-size: 3.5em; /* Slightly reduced font size from 4em to 3.5em */
+    font-weight: bold;
+}
+
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8em 0; /* Slightly reduced margin */
+}
+
+.weather .icon {
+    width: 45px; /* Slightly reduced icon size from 50px to 45px */
+    height: 45px;
+    margin-right: 8px; /* Slightly reduced margin */
+}
+
+/* ... (previous CSS code) ... */
+
+.weather .description-container { /* This container might also contribute to space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0 0.8em; /* Adjusted: top margin 0.5em, bottom margin 0.8em */
+}
+
+.weather .description {
+    text-transform: capitalize;
+    font-size: 1.1em;
+    /* No explicit margin here if container handles it well, or set to 0 */
+    margin: 0; /* Set to 0 if .description-container margin is used */
+}
+
+.weather .humidity {
+    margin: 0.4em 0; /* Reduced from 0.7em 0 */
+    font-size: 1em;
+}
+
+.weather .wind {
+    margin: 0.4em 0; /* Reduced from 0.7em 0 */
+    font-size: 1em;
+}
+
+/* You might also want to check the margin-bottom of the temperature */
+.weather .temp {
+    margin: 8px 0 12px; /* Example: 8px top, 0 left/right, 12px bottom */
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+/* ... (rest of your CSS code) ... */
+
+/* Loading state for weather info */
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px; /* Kept this for consistency with loading text */
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.weather.loading{
+    visibility: hidden;
+
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    
+}
